@@ -39,7 +39,7 @@ def encrypt_ofb(key, plaintext,iv):
 # Single key for encryption
 key = os.urandom(16)
 
-num_sentences = 100
+num_sentences = 3500
 
 data = []
 
