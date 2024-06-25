@@ -39,7 +39,7 @@ def encrypt_ofb(key, plaintext,iv):
 # Single key for encryption
 key = os.urandom(16)
 
-num_sentences = 3500
+num_sentences = 10000
 
 data = []
 
@@ -61,7 +61,7 @@ for i in range(num_sentences):
 field_names=['Plaintext','key','iv','Encryptedtext',"Mode"]
 
 # Save encrypted data into a CSV file
-with open('dataset_8.csv', mode="w", newline="") as file:
+with open('Largedatatest.csv', mode="w", newline="") as file:
     writer = csv.DictWriter(file, fieldnames=field_names)
     
     # Write header
